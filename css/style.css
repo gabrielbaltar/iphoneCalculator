@@ -1,0 +1,188 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+    font-display: swap;
+    --first-button-color: #ACACAC;
+    --second-button-color: #323232;
+    --orange-color: #FFA620;
+    --white-color: #ffffff;
+
+}
+
+body {
+    background-color: #09090B;
+}
+
+.button-change-background h1 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.calculator-container h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.buttons-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+    bottom: 180px;
+}
+
+.first-buttons{
+    display: flex;
+    gap: 0.9375rem;
+    font-size: 3rem;
+}
+
+.first-buttons button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--first-button-color);
+}
+
+.first-buttons button:last-child{
+    background-color: #FF9500;
+    color: #fff;
+    font-weight: 700;
+}
+
+.second-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9375rem;
+    font-size: 3rem;
+}
+
+.second-buttons button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: none;
+    color: var(--white-color);
+    background-color: var(--second-button-color);
+}
+
+.second-buttons button:last-child{
+    background-color: #FF9500;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.third-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9375rem;
+    font-size: 3rem;
+}
+
+.third-buttons button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: none;
+    color: var(--white-color);
+    background-color: var(--second-button-color);
+}
+
+.third-buttons button:last-child{
+    background-color: #FF9500;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.fourth-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9375rem;
+    font-size: 3rem;
+}
+
+.fourth-buttons button {
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: none;
+    color: var(--white-color);
+    background-color: var(--second-button-color);
+}
+
+.fourth-buttons button:last-child{
+    background-color: #FF9500;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.fifth-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9375rem;
+    font-size: 3rem;
+}
+
+.fifth-buttons button:first-child {
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 64px;
+    width: 144px;
+    border-radius: 50px;
+    border: none;
+    color: var(--white-color);
+    background-color: var(--second-button-color);
+}
+
+.fifth-buttons button {
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: none;
+    color: var(--white-color);
+    background-color: var(--second-button-color);
+}
+
+.iphone-image img{
+    max-height: 700px;
+    align-self: center;
+}
