@@ -6,8 +6,8 @@ console.log(resultText);
 //console.log(firstButton);
 //resultText.textContent = 'Hello World';
 
-let firstNumber = 0;
-let secondNumber = 0;
+let firstNumber = null;
+let secondNumber = null;
 let operator = null;
 
 allButtons.forEach(button => {
@@ -19,18 +19,22 @@ allButtons.forEach(button => {
         //console.log(button.textContent);
         resultText.textContent += event.target.textContent;
         
+        if(event.target.textContent === 'AC'){
+            resultText.textContent = '';
+        }
+
        if(!isNaN(parseFloat(value))){
             console.log('Number');
-            if(resultText.textContent === '0' || resultText.textContent === '/' || resultText.textContent === '*' || resultText.textContent === '+' || resultText.textContent === '-'){
+            if(resultText.textContent === 'O' || resultText.textContent === '/' || resultText.textContent === '*' || resultText.textContent === '+' || resultText.textContent === '-'){
                 resultText.textContent = value;
-                
+                operator && (secondNumber = parseFloat(resultText.textContent));
+            }else {
+                //resultText.textContent += value;
             }
         }
        
 
-        if(event.target.textContent === 'AC'){
-            resultText.textContent = '';
-        }
+        
     });
 
     

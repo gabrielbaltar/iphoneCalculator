@@ -171,6 +171,8 @@ body {
     width: 144px;
     border-radius: 50px;
     border: none;
+    text-align: left;
+    padding-left: 24px;
     color: var(--white-color);
     background-color: var(--second-button-color);
 }
