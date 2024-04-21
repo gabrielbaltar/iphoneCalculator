@@ -17,25 +17,55 @@ allButtons.forEach(button => {
         //console.log(value);
         
         //console.log(button.textContent);
-        resultText.textContent += event.target.textContent;
         
-        if(event.target.textContent === 'AC'){
-            resultText.textContent = '';
-        }
 
        if(!isNaN(parseFloat(value))){
-            console.log('Number');
-            if(resultText.textContent === 'O' || resultText.textContent === '/' || resultText.textContent === '*' || resultText.textContent === '+' || resultText.textContent === '-'){
+
+            if(resultText.textContent === '0' || resultText.textContent === operator || resultText.textContent === 'Error') {
                 resultText.textContent = value;
                 operator && (secondNumber = parseFloat(resultText.textContent));
             }else {
-                //resultText.textContent += value;
+                resultText.textContent += value;
             }
+        }else if (['+', '-', 'x', '/'].includes(value)){
+            firstNumber = parseFloat(resultText.textContent);
+            operator = value;
+            resultText.textContent = '0';
+        }else if (value === "="){
+            if(firstNumber !== null && operator !== null && secondNumber !== null);
+            resultText.textContent = calculate(firstNumber, operator, secondNumber);
+            firstNumber = parseFloat(resultText.textContent);
+            secondNumber = null;
+            operator = null;
         }
-       
 
-        
+        if(event.target.textContent === 'AC'){
+            resultText.textContent = '';
+            firstNumber = null;
+            secondNumber = null;
+            operator = null;
+        }
+
     });
 
-    
 });
+
+function calculate(number1, operator, number2){
+
+    switch(operator){
+        case '+':
+            return number1 + number2;
+        case '-':        
+            return number1 - number2;
+        case 'x':       
+            return number1 * number2;
+        case '/':
+            if(number2 !== 0) {
+                return number1 / number2;
+            }else {
+                return alert('Não é possível dividir por zero');
+            }
+        default: 
+            return alert('Error');
+    }
+}

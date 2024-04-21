@@ -190,8 +190,9 @@ body {
 }
 
 .number-result {
+    overflow: hidden;
     display: flex;
-    width: 300px;
+    max-width: 300px;
     justify-content: end;
 }
 
