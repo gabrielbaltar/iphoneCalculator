@@ -1,7 +1,10 @@
 const resultText = document.querySelector('.number-result p');
 //const firstButton = document.querySelectorAll('.first-buttons button');
 const allButtons = document.querySelectorAll('button');
-console.log(resultText);
+
+const buttonContainer = document.querySelectorAll('.buttons-container button');
+
+console.log(buttonContainer);
 
 //console.log(firstButton);
 //resultText.textContent = 'Hello World';
@@ -27,16 +30,32 @@ allButtons.forEach(button => {
             }else {
                 resultText.textContent += value;
             }
+
+            if(operator){
+                secondNumber = parseFloat(resultText.textContent);
+            }
+
         }else if (['+', '-', 'x', '/'].includes(value)){
+            
+            if(operator) {
+                firstNumber.calculate(firstNumber, operator, secondNumber);
+                resultText.textContent = firstNumber;
+                secondNumber = null;
+            }else {
+                firstNumber = parseFloat(resultText.textContent);
+            }
+
             firstNumber = parseFloat(resultText.textContent);
             operator = value;
             resultText.textContent = '0';
+
         }else if (value === "="){
-            if(firstNumber !== null && operator !== null && secondNumber !== null);
-            resultText.textContent = calculate(firstNumber, operator, secondNumber);
-            firstNumber = parseFloat(resultText.textContent);
-            secondNumber = null;
-            operator = null;
+            if(firstNumber !== null && operator !== null && secondNumber !== null) {
+                resultText.textContent = calculate(firstNumber, operator, secondNumber);
+                firstNumber = parseFloat(resultText.textContent);
+                secondNumber = null;
+                operator = null;    
+            }
         }
 
         if(event.target.textContent === 'AC'){
@@ -69,3 +88,15 @@ function calculate(number1, operator, number2){
             return alert('Error');
     }
 }
+
+//Função para adicionar o hover ao clicar
+/*buttonContainer.forEach(event => {
+    event.addEventListener('click', () => {
+        console.log("Clicou");
+        event.classList.add('buttons-container-new');
+    });
+
+    setTimeout(() => {
+        event.classList.remove("buttons-container-new");
+    }, 300);
+}); */

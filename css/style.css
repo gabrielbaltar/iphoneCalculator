@@ -13,11 +13,23 @@
     --second-button-color: #323232;
     --orange-color: #FFA620;
     --white-color: #ffffff;
+    --hover-button1: #767676;
 
 }
 
 body {
     background-color: #09090B;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
 }
 
 .button-change-background h1 {
@@ -35,12 +47,12 @@ body {
 
 .calculator-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    height: 700px;
     position: relative;
 }
 
@@ -49,7 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.9375rem;
-    bottom: 180px;
+    bottom: 64px;
 }
 
 .first-buttons{
@@ -200,6 +212,11 @@ body {
     color: var(--white-color);
     font-weight: 500;
     font-size: 4rem;
+}
+
+.buttons-container-new button{
+    background-color: var(--first-button-color);
+    transition: background-color 0.3s;
 }
 
 .iphone-image img{
