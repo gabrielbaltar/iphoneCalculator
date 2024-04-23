@@ -52,7 +52,7 @@ body {
     align-items: center;
     margin: 0 auto;
     max-width: 100%;
-    height: 700px;
+    height: 630px;
     position: relative;
 }
 
@@ -60,22 +60,22 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 0.9375rem;
+    gap: 0.8rem;
     bottom: 64px;
 }
 
 .first-buttons{
     display: flex;
-    gap: 0.9375rem;
+    gap: 0.8rem;
     font-size: 3rem;
 }
 
 .first-buttons button{
     font-size: 1.5rem;
     font-weight: 500;
-    height: 64px;
+    height: 56px;
+    width: 56px;
     cursor: pointer;
-    width: 64px;
     border-radius: 50%;
     border: none;
     background-color: var(--first-button-color);
@@ -91,15 +91,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.9375rem;
+    gap: 0.8rem;
     font-size: 3rem;
 }
 
 .second-buttons button{
     font-size: 1.5rem;
     font-weight: 500;
-    height: 64px;
-    width: 64px;
+    height: 56px;
+    width: 56px;
     border-radius: 50%;
     cursor: pointer;
     border: none;
@@ -118,15 +118,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.9375rem;
+    gap: 0.8rem;
     font-size: 3rem;
 }
 
 .third-buttons button{
     font-size: 1.5rem;
     font-weight: 500;
-    height: 64px;
-    width: 64px;
+    height: 56px;
+    width: 56px;
     border-radius: 50%;
     cursor: pointer;
     border: none;
@@ -145,15 +145,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.9375rem;
+    gap: 0.8rem;
     font-size: 3rem;
 }
 
 .fourth-buttons button {
     font-size: 1.5rem;
     font-weight: 500;
-    height: 64px;
-    width: 64px;
+    height: 56px;
+    width: 56px;
     cursor: pointer;
     border-radius: 50%;
     border: none;
@@ -172,15 +172,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.9375rem;
+    gap: 0.8rem;
     font-size: 3rem;
 }
 
 .fifth-buttons button:first-child {
     font-size: 1.5rem;
     font-weight: 500;
-    height: 64px;
-    width: 144px;
+    height: 56px;
+    width: 124px;
     border-radius: 50px;
     border: none;
     text-align: left;
@@ -192,8 +192,8 @@ body {
 .fifth-buttons button {
     font-size: 1.5rem;
     font-weight: 500;
-    height: 64px;
-    width: 64px;
+    height: 56px;
+    width: 56px;
     border-radius: 50%;
     cursor: pointer;
     border: none;
@@ -220,6 +220,6 @@ body {
 }
 
 .iphone-image img{
-    max-height: 700px;
+    max-height: 630px;
     align-self: center;
 }
