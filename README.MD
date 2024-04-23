@@ -1,6 +1,6 @@
 <div align="left">
 
-# Raycast App
+# Iphone Calculator
 
 [ACESSAR PÁGINA](https://gabrielbaltar.github.io/iphoneCalculator/)
 
