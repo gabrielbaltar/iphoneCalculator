@@ -1,6 +1,6 @@
 <div align="left">
 
-# Calculadora do Iphone
+# Iphone Calculator
 
 [ACESSAR PÁGINA](https://gabrielbaltar.github.io/iphoneCalculator/)
 
