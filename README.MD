@@ -2,6 +2,6 @@
 
 # Iphone Calculator
 
-[ACESSAR PÁGINA](https://gabrielbaltar.github.io/iphoneCalculator/)
+[Open Link](https://gabrielbaltar.github.io/iphoneCalculator/)
 
 </div>
